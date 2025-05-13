@@ -18,23 +18,17 @@ To run this project, you'll need the following:
 🛠️ Required Libraries
 Install the required dependencies using pip:
 
-bash
-Copy
-Edit
+
 pip install typing-extensions langgraph
 🚀 Usage
 Clone this repository:
 
-bash
-Copy
-Edit
+
 git clone https://github.com/your-username/langgraph-chatbot.git
 cd langgraph-chatbot
 Open the notebook:
 
-bash
-Copy
-Edit
+
 jupyter notebook LangGraph(ChatBot).ipynb
 Run the cells in order to initialize the chatbot and interact with it.
 
@@ -53,17 +47,14 @@ add_messages for updating the state dynamically
 
 🧩 Example Code Snippets
 🖋️ Defining the State
-python
-Copy
-Edit
+
+
 class State(TypedDict):
     messages: Annotated[list, add_messages]
 
 graph_builder = StateGraph(State)
 🤖 Chatbot Function
-python
-Copy
-Edit
+
 def chatbot(state: State):
     return {"messages": llm.invoke(state['messages'])}
 🤝 Contributing
