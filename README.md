@@ -1,4 +1,4 @@
-🌐 LangGraph Chatbot
+**🌐 LangGraph-Chatbot-**
 This repository demonstrates how to build a chatbot using the LangGraph framework. 🚀 The example focuses on leveraging state management to handle chatbot interactions efficiently.
 
 ✨ Features
